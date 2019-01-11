@@ -25,13 +25,15 @@ public class ManageTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		logins.stop();
 		System.out.println("end===========");
+		
 
 	}
 
 	public void InitDriver() {
 		System.setProperty("webdriver.chrome.driver",
-		        "D:/Java/workplace/SeleniumKaola/chromedriver.exe");
+		        "D:/Java/workplace/SeleniumTestDemo/chromedriver.exe");
 		// ChromeOptions option= new ChromeOptions();
 		// option.addArguments("disable-infobars");
 		driver = new ChromeDriver();
@@ -89,5 +91,9 @@ public class ManageTest {
 	public String getvalue(String element) {
 		WebElement get = driver.findElement(By.id(element));
 		return get.getText();
+	}
+	//关闭浏览器
+	public void stop(){
+		driver.close();
 	}
 }
