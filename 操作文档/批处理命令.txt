@@ -1,0 +1,6 @@
+::进入目录
+cd D:\Java\workplace\SeleniumTestDemo\src
+::编译
+javac -cp D:\Java\workplace\SeleniumTestDemo\outJar\selenium-server-standalone-2.40.0.jar -encoding utf-8 D:\Java\workplace\SeleniumTestDemo\src\com\test\manage\ManageTest.java
+::执行
+java -cp .;/D:\Java\workplace\SeleniumTestDemo\outJar\selenium-server-standalone-2.40.0.jar com.test.manage.ManageTest
